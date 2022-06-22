@@ -1,7 +1,7 @@
 
 # News App
 
-News App that has Breaking News section and allows user to save some News and make search for news.
+News App that has Breaking News section and allows user to save and make search for news.
 
 
 ## Technologies used
