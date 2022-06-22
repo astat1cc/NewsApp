@@ -22,4 +22,4 @@ I used api from https://newsapi.org/
 
 ## Screenshots
 
-![4M3tsueQGV8](https://user-images.githubusercontent.com/94394251/175042857-896e1e0b-c0d3-43f4-b3c2-f77db78de3fd.jpg)
+![1655905067252](https://user-images.githubusercontent.com/94394251/175070037-ab4c09c0-9c43-4c99-a4b6-660ecb8c2356.jpg)
