@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import com.example.newsapp.R
 import com.example.newsapp.NewsAdapter
@@ -28,6 +29,13 @@ class NewsActivity : AppCompatActivity() {
 
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.newsNavHostFragment) as NavHostFragment
-        binding.bottomNavigationView.setupWithNavController(navHostFragment.navController)
+        val navController = navHostFragment.navController
+        binding.bottomNavigationView.apply {
+            setupWithNavController(navController)
+            setOnItemSelectedListener { item ->
+                NavigationUI.onNavDestinationSelected(item, navController)
+                return@setOnItemSelectedListener true
+            }
+        }
     }
 }

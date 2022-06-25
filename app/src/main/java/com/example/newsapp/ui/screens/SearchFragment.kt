@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.Observer
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.newsapp.databinding.FragmentSearchNewsBinding
 import com.example.newsapp.model.Article
@@ -50,8 +52,7 @@ class SearchFragment : BaseFragment() {
     }
 
     private fun openArticle(article: Article) {
-        val action =
-            SearchFragmentDirections.actionSearchFragmentToArticleFragment(article)
+        val action = SearchFragmentDirections.actionSearchFragmentToArticleFragment(article)
         findNavController().navigate(action)
     }
 
